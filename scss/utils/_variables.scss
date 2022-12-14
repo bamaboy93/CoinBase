@@ -1,0 +1,29 @@
+$text-color: #333333;
+$accent: #fd749b;
+$white: #fff;
+$bkack: #151515;
+$grey: #888888;
+
+// Gradients
+$hero-gradient: linear-gradient(174.48deg, #fd749b -12.41%, #281ac8 88.56%);
+$clients-gradient: radial-gradient(
+  100% 100% at 46.86% 0%,
+  #ff8000 0%,
+  #e34141 100%
+);
+$accent-gradient: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+// Transition prop
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+// Text - Box Shadows
+$logo-text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+  0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+$title-text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+  0px -4px 10px rgba(255, 255, 255, 0.3);
+
+$main-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+$secondary-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+  rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+$main-card-box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+  rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px,
+  rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;

@@ -1,0 +1,29 @@
+.hero-overlay {
+  background: $hero-gradient;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 208px;
+}
+
+.hero__wrapper {
+  margin-top: 142px;
+  width: 529px;
+}
+
+.hero__title {
+  margin-bottom: 21px;
+  font-size: 40px;
+  line-height: 1.5;
+  color: $white;
+}
+
+.hero__desc {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $white;
+}

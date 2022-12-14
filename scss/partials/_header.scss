@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  margin-right: 220px;
+}
+
+.header-nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__item:not(:last-child) {
+  margin-right: 68px;
+}
+
+.header-nav__link {
+  padding: 36px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.header__buttons {
+  margin-left: auto;
+}
