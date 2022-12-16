@@ -71,6 +71,7 @@
             height="512"
           />
         </section>
+        <div class="hero-accent"></div>
       </div>
       <!-- Greet Section -->
       <div class="greet-overlay">
@@ -98,6 +99,7 @@
       </div>
       <!-- Transaction Section -->
       <div class="transaction-overlay">
+        <div class="transaction-overlayTop"></div>
         <section class="transaction container">
           <article class="article">
             <ul class="titles-list">
@@ -215,17 +217,21 @@
           </article>
         </section>
       </div>
-      <section>
-        <div>
-          <div>
-            <h2>Great experience with CoinBase</h2>
-            <p>
+      <!-- About Section -->
+      <div class="about-overlay">
+        <section class="about container">
+          <div class="about__info">
+            <h2 class="about__title">
+              Great experience <br />
+              with CoinBase
+            </h2>
+            <p class="about__desc">
               CoinBase is an online site and a p2admin platform that allows
               users to buy, sell and/ or exchange digital and fiat assets
               safely. Owned and managed by CoinBase Business Services
               established and Incoperated in Nigeria.
             </p>
-            <a href="">DISCOVER</a>
+            <a class="button" href="">DISCOVER</a>
           </div>
           <img
             src="./images/greetImage2.png"
@@ -233,54 +239,74 @@
             width="514"
             height="413"
           />
-        </div>
-      </section>
+        </section>
+      </div>
       <!-- Trade Section -->
-      <section>
-        <div>
-          <h2>Trade from anywhere</h2>
-          <ul>
-            <li><p>Bitcoin</p></li>
-            <li><p>Gift Cards</p></li>
-          </ul>
-        </div>
-      </section>
+      <div class="trade-overlay">
+        <section class="trade container">
+          <div class="trade__box">
+            <h2 class="trade__title">Trade from anywhere</h2>
+            <ul class="trade__list">
+              <li class="trade__item">
+                <svg class="trade__icon" width="58" height="58">
+                  <use href="./images/sprite.svg#icon-bitcoin"></use>
+                </svg>
+                <p class="trade__name">Bitcoin</p>
+              </li>
+              <li class="trade__item">
+                <svg class="trade__icon" width="58" height="58">
+                  <use href="./images/sprite.svg#icon-gift-cards"></use>
+                </svg>
+                <p class="trade__name">Gift Cards</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
       <!-- Blog Section -->
-      <section>
-        <h2>Our blog</h2>
-        <p>Get to know the latest stuff via our blog post.</p>
-        <ul>
-          <li>
-            <article>
-              <p>01 FEB, 2019 TECHNOLOGY</p>
-              <h3>HOW TO SELL YOUR ITUNES GIFTCARD WITH US .</h3>
-              <p>
+      <section class="blog container">
+        <h2 class="blog__title">Our blog</h2>
+        <p class="blog__desc">
+          Get to know the latest stuff via our blog post.
+        </p>
+        <ul class="blog__list">
+          <li class="blog__item">
+            <article class="blog__article">
+              <p class="blog__article--date">01 FEB, 2019 TECHNOLOGY</p>
+              <h3 class="blog__article--title">
+                HOW TO SELL YOUR ITUNES GIFTCARD WITH US .
+              </h3>
+              <p class="blog__article--desc">
                 Lorem ipsum dolor sit amet, magna habemus ius ad, qui minimum
                 voluptaria in. Ad mei modus quodsi complectitur, postea...
               </p>
-              <a href="">READ MORE</a>
+              <a href="" class="blog__article--button">READ MORE</a>
             </article>
           </li>
-          <li>
-            <article>
-              <p>19 JUNE, 2019 BUSINESS</p>
-              <h3>ETH TO NAIRA EXCHANGE RATE IS NOW #400 PER...</h3>
-              <p>
+          <li class="blog__item">
+            <article class="blog__article">
+              <p class="blog__article--date">19 JUNE, 2019 BUSINESS</p>
+              <h3 class="blog__article--title">
+                ETH TO NAIRA EXCHANGE RATE IS NOW #400 PER...
+              </h3>
+              <p class="blog__article--desc">
                 Lorem ipsum dolor sit amet, magna habemus ius ad, qui minimum
                 voluptaria in. Ad mei modus quodsi complectitur, postea...
               </p>
-              <a href="">READ MORE</a>
+              <a href="" class="blog__article--button">READ MORE</a>
             </article>
           </li>
-          <li>
-            <article>
-              <p>01 FDEC, 2019 LIFESTYLE</p>
-              <h3>EXCHANGE 5 PRODUCTS & GET 1 FREE PRODUCT.</h3>
-              <p>
+          <li class="blog__item">
+            <article class="blog__article">
+              <p class="blog__article--date">01 FDEC, 2019 LIFESTYLE</p>
+              <h3 class="blog__article--title">
+                EXCHANGE 5 PRODUCTS & GET 1 FREE PRODUCT.
+              </h3>
+              <p class="blog__article--desc">
                 Lorem ipsum dolor sit amet, magna habemus ius ad, qui minimum
                 voluptaria in. Ad mei modus quodsi complectitur, postea...
               </p>
-              <a href="">READ MORE</a>
+              <a href="" class="blog__article--button">READ MORE</a>
             </article>
           </li>
         </ul>
@@ -303,54 +329,128 @@
         <div><a href="">!</a> <a href="">!</a></div>
       </section>
       <!-- Sub Section -->
-      <section>
-        <h2>Subscribe our newsletter</h2>
-        <p>
-          Subscribe to our newsletter for daily/weekly update of our products
-          and services.
+      <section class="sub container">
+        <h2 class="sub__title">Subscribe our newsletter</h2>
+        <p class="sub__desc">
+          Subscribe to our newsletter for daily/weekly <br />
+          update of our products and services.
         </p>
-        <input type="email" />
-        <button type="submit">DISCOVER</button>
+
+        <div class="sub__form">
+          <input class="sub__input" type="email" placeholder="EMAIL" />
+          <button class="button" type="submit">DISCOVER</button>
+        </div>
       </section>
     </main>
-    <footer>
-      <div>
-        <img
-          src="./images/FooterLogo.png"
-          alt="logotype"
-          width="112"
-          height="22"
-        />
-        <p>
-          Fusce ut elit aliquet, fermentum leo vel, tempus nunc. Fusce eu
-          rhoncus augue. Fusce vel metus pharetra, fermentum
-        </p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <p>© 2019 Designed by Cr8tiv_yemmy</p>
-      </div>
-      <div>
-        <div>
-          <h3>CoinBase Links</h3>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Sell</a></li>
-            <li><a href="">Contact Us</a></li>
+    <div class="footer-overlay">
+      <footer class="footer container-wide">
+        <div class="footer-info">
+          <img
+            src="./images/FooterLogo.png"
+            alt="logotype"
+            width="132"
+            height="28"
+          />
+          <p class="footer-info__desc">
+            Fusce ut elit aliquet, fermentum leo vel, tempus nunc. Fusce eu
+            rhoncus augue. Fusce vel metus pharetra, fermentum
+          </p>
+          <ul class="footer-info__list">
+            <li class="footer-info__item">
+              <a class="footer-info__link" href=""
+                ><svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-google"></use></svg
+              ></a>
+            </li>
+            <li class="footer-info__item">
+              <a class="footer-info__link" href=""
+                ><svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="footer-info__item">
+              <a class="footer-info__link" href=""
+                ><svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="footer-info__item">
+              <a class="footer-info__link" href=""
+                ><svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+          </ul>
+          <p>© 2019 Designed by Cr8tiv_yemmy</p>
+        </div>
+        <div class="footer-actions">
+          <div class="footer-links">
+            <h3 class="footer__title">CoinBase Links</h3>
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <a class="footer-links__link" href="">Home</a>
+              </li>
+              <li class="footer-links__item">
+                <a class="footer-links__link" href="">About Us</a>
+              </li>
+              <li class="footer-links__item">
+                <a class="footer-links__link" href="">Blog</a>
+              </li>
+              <li class="footer-links__item">
+                <a class="footer-links__link" href="">Sell</a>
+              </li>
+              <li class="footer-links__item">
+                <a class="footer-links__link" href="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer__title">Contact Us</h3>
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <a class="footer-links__link" href="">(+234) 137632128</a>
+              </li>
+              <li class="footer-links__item">
+                <a class="footer-links__link" href="">Coinbase@yahoo.com</a>
+              </li>
+              <li class="footer-links__item">
+                <p class="footer-links__adress">Address goes here</p>
+              </li>
+            </ul>
+            <a class="footer-links__app" href="#">Download Our App</a>
+          </div>
+        </div>
+        <div class="footer-social">
+          <h3 class="footer__title">CoinBase Instagram</h3>
+
+          <ul class="instagram">
+            <li class="instagram__item">
+              <a href="" class="instagram__link"></a>
+            </li>
+            <li class="instagram__item">
+              <a href="" class="instagram__link"></a>
+            </li>
+            <li class="instagram__item">
+              <a href="" class="instagram__link"></a>
+            </li>
+            <li class="instagram__item">
+              <a href="" class="instagram__link"></a>
+            </li>
+            <li class="instagram__item">
+              <a href="" class="instagram__link"></a>
+            </li>
+            <li class="instagram__item">
+              <a href="" class="instagram__link"></a>
+            </li>
+            <li class="instagram__item">
+              <a href="" class="instagram__link"></a>
+            </li>
+            <li class="instagram__item">
+              <a href="" class="instagram__link"></a>
+            </li>
           </ul>
         </div>
-        <div>
-          <h3>Contact Us</h3>
-          <p>(+234) 137632128 Coinbase@yahoo.com Address goes here</p>
-          <p>Download Our App</p>
-        </div>
-      </div>
-      <div><h3>CoinBase Instagram</h3></div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

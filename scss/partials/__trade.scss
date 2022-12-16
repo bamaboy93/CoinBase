@@ -1,0 +1,108 @@
+.trade-overlay {
+  position: relative;
+  height: 488px;
+  background: $accent-gradient;
+
+  &:before {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    content: "";
+    height: 250px;
+    width: 100%;
+    background-image: url(../../images/overlayAbout.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.trade {
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.trade__box {
+  position: relative;
+  z-index: 566;
+  width: 980px;
+  padding: 74px 197px 85px 196px;
+  text-align: center;
+  background: $white;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+.trade__title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 77px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 2.3;
+
+  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 110px;
+    display: inline-block;
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: $accent;
+    border-radius: 5px;
+  }
+}
+
+.trade__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trade__item {
+  position: relative;
+  width: 262px;
+  padding-top: 41px;
+  padding-bottom: 57px;
+
+  $border: 3px;
+  background: $white;
+  background-clip: padding-box;
+  border: solid $border transparent;
+  border-radius: 15px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$border;
+    border-radius: inherit;
+    background: $accent-gradient;
+  }
+
+  &:not(:last-child) {
+    margin-right: 63px;
+  }
+}
+
+.trade__icon {
+  fill: $accent;
+  margin-bottom: 50px;
+}
+
+.trade__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $text-color;
+}

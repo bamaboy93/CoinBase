@@ -1,0 +1,57 @@
+.sub {
+  padding: 100px 0 90px 0;
+  text-align: center;
+}
+
+.sub__title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 37px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 2.3;
+
+  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    display: inline-block;
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: $accent;
+    border-radius: 5px;
+  }
+}
+
+.sub__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.sub__input {
+  padding: 16px 0 16px 25px;
+  margin-right: 25px;
+  min-width: 420px;
+  color: $grey;
+  border-radius: 100px;
+  outline: 2px solid $grey;
+  background: transparent;
+  border: transparent;
+  &:focus {
+    box-shadow: rgba(210, 54, 129, 0.25) 0px 54px 55px,
+      rgba(223, 34, 84, 0.12) 0px -12px 30px,
+      rgba(238, 37, 64, 0.12) 0px 4px 6px,
+      rgba(242, 32, 112, 0.17) 0px 12px 13px,
+      rgba(232, 69, 104, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    outline: 2px solid $accent;
+  }
+}

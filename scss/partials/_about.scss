@@ -1,18 +1,38 @@
-.greet {
+.about-overlay {
   position: relative;
-  z-index: 111;
-  padding-top: 50px;
+  &:before {
+    position: absolute;
+    top: -120px;
+    right: 0;
+    content: "";
+    height: 250px;
+    width: 100%;
+    background-image: url(../../images/overlayAbout.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.about {
+  position: relative;
+  z-index: 123;
+  padding-top: 80px;
+  padding-bottom: 116px;
   display: flex;
   justify-content: space-between;
 }
 
-.greet__title {
+.about__info {
+  width: 542px;
+}
+
+.about__title {
   position: relative;
   display: inline-block;
-  margin-bottom: 36px;
+  margin-bottom: 68px;
   font-weight: 700;
   font-size: 28px;
-  line-height: 2.3;
+  line-height: 1.5;
 
   background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
   -webkit-background-clip: text;
@@ -21,7 +41,7 @@
 
   &::after {
     position: absolute;
-    bottom: 0;
+    bottom: -18px;
     left: 0;
     display: inline-block;
     content: "";
@@ -32,6 +52,6 @@
   }
 }
 
-.greet__desc {
+.about__desc {
   margin-bottom: 35px;
 }

@@ -1,8 +1,21 @@
 .transaction-overlay {
+  position: relative;
   background: $accent-gradient;
+}
+.transaction-overlayTop {
+  position: absolute;
+  top: -375px;
+  right: 0;
+  content: "";
+  height: 423px;
+  width: 100vw;
+  background-image: url(../../images/overlayArticleTop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .transaction {
   padding-top: 250px;
+  padding-bottom: 170px;
 }
 
 .article {
