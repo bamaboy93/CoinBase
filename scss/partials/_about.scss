@@ -1,18 +1,3 @@
-.about-overlay {
-  position: relative;
-  &:before {
-    position: absolute;
-    top: -120px;
-    right: 0;
-    content: "";
-    height: 250px;
-    width: 100%;
-    background-image: url(../../images/overlayAbout.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
-
 .about {
   position: relative;
   z-index: 123;

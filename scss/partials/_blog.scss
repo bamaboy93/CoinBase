@@ -1,5 +1,8 @@
 .blog {
+  position: relative;
+  z-index: 333;
   padding-top: 280px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -43,7 +46,7 @@
   border-radius: 15px;
   color: $grey;
   background: $white;
-  transition: transform 500ms $cubic, color 500ms $cubic, border 500ms $cubic;
+  transition: transform 250ms ease-in, color 500ms $cubic, border 500ms $cubic;
   box-shadow: $secondary-box-shadow;
 
   &:hover,

@@ -4,18 +4,30 @@
 }
 .transaction-overlayTop {
   position: absolute;
-  top: -375px;
+  top: -35px;
+  right: 0;
+  rotate: 180deg;
+  content: "";
+  height: 250px;
+  width: 100vw;
+  background-image: url(../../images/overlayHero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.transaction-overlayBot {
+  position: absolute;
+  bottom: -20px;
   right: 0;
   content: "";
-  height: 423px;
+  height: 250px;
   width: 100vw;
-  background-image: url(../../images/overlayArticleTop.png);
+  background-image: url(../../images/overlayAbout.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .transaction {
   padding-top: 250px;
-  padding-bottom: 170px;
+  padding-bottom: 270px;
 }
 
 .article {
