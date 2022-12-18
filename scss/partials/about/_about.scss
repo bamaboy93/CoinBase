@@ -1,0 +1,32 @@
+.about {
+  text-align: center;
+  padding-bottom: 107px;
+}
+
+.about__box {
+  width: 512px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 66px;
+}
+
+.about-article {
+  width: 1048px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 35px 260px 56px 260px;
+  border: 2px solid #a91f7bb3;
+  border-radius: 30px;
+  box-shadow: $secondary-box-shadow;
+}
+
+.hero-about__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 37px;
+}
+
+.hero-about__item:not(:last-child) {
+  margin-right: 22px;
+}

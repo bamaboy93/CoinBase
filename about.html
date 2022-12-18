@@ -64,8 +64,8 @@
     <main>
       <!-- Hero -->
       <div class="hero-overlay">
-        <section class="hero container">
-          <div class="hero__wrapper">
+        <section class="hero hero-about container">
+          <div class="hero__wrapper hero-about__wrapper">
             <h1 class="hero__title">Great service, Professional support</h1>
             <p class="hero__desc">
               CoinBase is a platform for trading your bitcoin and giftcard at
@@ -83,54 +83,77 @@
       </div>
       <!-- Section About -->
       <section class="about container">
-        <h2>
-          “Morbi sagittis ultricies ex, a tempus lorem suscipit non. Donec
-          semper leo ut lobortis condimentum. Orci varius natoque penatibus et
-          magnis”
-        </h2>
-        <p>Ramon Ridwan • CEO CoinBase</p>
-        <div>
+        <div class="about__box">
+          <h2 class="title title--about">
+            “Morbi sagittis ultricies ex, a tempus lorem suscipit non. Donec
+            semper leo ut lobortis condimentum. Orci varius natoque penatibus et
+            magnis”
+          </h2>
+          <p>Ramon Ridwan • CEO CoinBase</p>
+        </div>
+        <article class="about-article">
           <img
             src="./images/about/about-image.png"
             alt=""
             width="527"
             height="329"
           />
-          <h2>About CoinBase</h2>
+          <h2 class="title title--about-article">About CoinBase</h2>
           <p>
             CoinBase is an online site and a p2admin platform that allows users
             to buy, sell and/ or exchange digital and fiat assets safely. Owned
             and managed by CoinBase Business Services established and
             Incoperated in Nigeria.
           </p>
-          <div></div>
-        </div>
+          <ul class="hero-about__list">
+            <li class="hero-about__item">
+              <svg width="35" height="36">
+                <use href="./images/sprite.svg#icon-quality"></use>
+              </svg>
+            </li>
+            <li class="hero-about__item">
+              <svg width="31" height="31">
+                <use href="./images/sprite.svg#icon-medal"></use>
+              </svg>
+            </li>
+            <li class="hero-about__item">
+              <svg width="30" height="31">
+                <use href="./images/sprite.svg#icon-customer-review"></use>
+              </svg>
+            </li>
+            <li class="hero-about__item">
+              <svg width="31" height="31">
+                <use href="./images/sprite.svg#icon-support"></use>
+              </svg>
+            </li>
+          </ul>
+        </article>
       </section>
       <!-- Section History -->
       <section class="history container">
-        <h2>Our history</h2>
-        <ul>
-          <li>
-            <h3>May 2010</h3>
-            <p>
+        <h2 class="title title--history">Our history</h2>
+        <ul class="history__list">
+          <li class="history__item">
+            <h3 class="history__item--title">May 2010</h3>
+            <p class="history__item--desc">
               Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem.
               Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex
               rutrum. Nulla facilisi. Cras ullamcorper pellentesque orci, nec
               vestibulum nibh.uspendisse
             </p>
           </li>
-          <li>
-            <h3>May 2017</h3>
-            <p>
+          <li class="history__item">
+            <h3 class="history__item--title">May 2017</h3>
+            <p class="history__item--desc">
               Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem.
               Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex
               rutrum. Nulla facilisi. Cras ullamcorper pellentesque orci, nec
               vestibulum nibh.uspendisse
             </p>
           </li>
-          <li>
-            <h3>May 2019</h3>
-            <p>
+          <li class="history__item">
+            <h3 class="history__item--title">May 2019</h3>
+            <p class="history__item--desc">
               Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem.
               Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex
               rutrum. Nulla facilisi. Cras ullamcorper pellentesque orci, nec
@@ -138,19 +161,29 @@
             </p>
           </li>
         </ul>
-        <p>To be continue…</p>
+        <p class="history__spoiler">To be continue…</p>
       </section>
       <!-- Section Team -->
       <section class="team container">
-        <h2>Meet the team</h2>
+        <h2 class="title title--team">Meet the team</h2>
         <p>
           Meet the team that makes the process of this system fast and painless
+          <br />
           as possible to provide you with good result
         </p>
+        <div class="carousel">
+          <ul class="carousel__list">
+            <li class="carousel__item" data-pos="-2">CTO | Douglas Grimes</li>
+            <li class="carousel__item" data-pos="-1">CFO | Amanda Roth</li>
+            <li class="carousel__item" data-pos="0">CEO | Ramon Ridwan</li>
+            <li class="carousel__item" data-pos="1">CVO | Gregg Wilson</li>
+            <li class="carousel__item" data-pos="2">CMO | Lucy Crown</li>
+          </ul>
+        </div>
       </section>
       <!-- Section Subscribe -->
-      <section class="sub container">
-        <h2 class="sub__title">Subscribe our newsletter</h2>
+      <section class="sub sub-about container">
+        <h2 class="title title--sub">Subscribe our newsletter</h2>
         <p class="sub__desc">
           Subscribe to our newsletter for daily/weekly <br />
           update of our products and services.
@@ -273,5 +306,6 @@
         </div>
       </footer>
     </div>
+    <script src="./js/carousel.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 .title {
   position: relative;
   display: inline-block;
-  margin-bottom: 77px;
+  margin-bottom: 37px;
   font-weight: 700;
   font-size: 28px;
   line-height: 2.3;
@@ -14,7 +14,7 @@
   &::after {
     position: absolute;
     bottom: 0;
-    left: 110px;
+    left: 130px;
     display: inline-block;
     content: "";
     width: 50px;
@@ -22,4 +22,48 @@
     background-color: $accent;
     border-radius: 5px;
   }
+}
+
+.title--greet {
+  line-height: 1.5;
+  &::after {
+    left: 0;
+    bottom: -10px;
+  }
+}
+.title--blog::after {
+  left: 35px;
+}
+.title--app::after {
+  left: 105px;
+}
+.title--sub::after {
+  left: 150px;
+}
+
+// About
+
+.title--about {
+  font-size: 18px;
+
+  &::after {
+    left: 230px;
+    bottom: -10px;
+  }
+}
+
+.title--about-article::after {
+  left: 90px;
+}
+
+.title--history {
+  margin-bottom: 70px;
+
+  &::after {
+    left: 55px;
+  }
+}
+
+.title--team::after {
+  left: 79px;
 }

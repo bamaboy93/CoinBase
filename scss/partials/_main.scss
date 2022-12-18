@@ -1,9 +1,9 @@
-@import "./overlays";
+@import "./general/overlays";
 @import "./general/title";
-@import "./x/buttons";
+@import "./general/buttons";
 
 @import "./header";
-@import "./homepage/hero";
+@import "./hero";
 @import "./sub";
 @import "./footer";
 
@@ -17,3 +17,6 @@
 @import "./homepage/app";
 
 // About
+@import "./about/about";
+@import "./about/history";
+@import "./about/team";

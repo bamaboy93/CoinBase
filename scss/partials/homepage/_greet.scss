@@ -6,32 +6,6 @@
   justify-content: space-between;
 }
 
-.greet__title {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 36px;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 2.3;
-
-  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-
-  &::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: inline-block;
-    content: "";
-    width: 50px;
-    height: 5px;
-    background-color: $accent;
-    border-radius: 5px;
-  }
-}
-
 .greet__desc {
   margin-bottom: 35px;
 }

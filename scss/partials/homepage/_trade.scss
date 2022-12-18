@@ -18,8 +18,6 @@
 
 .trade {
   padding-top: 120px;
-  display: flex;
-  justify-content: center;
 }
 
 .trade__box {
@@ -27,6 +25,8 @@
   z-index: 566;
   width: 980px;
   padding: 74px 197px 85px 196px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   background: $white;
   box-shadow: $secondary-box-shadow;
