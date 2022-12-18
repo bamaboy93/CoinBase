@@ -46,11 +46,7 @@
   background: transparent;
   border: transparent;
   &:focus {
-    box-shadow: rgba(210, 54, 129, 0.25) 0px 54px 55px,
-      rgba(223, 34, 84, 0.12) 0px -12px 30px,
-      rgba(238, 37, 64, 0.12) 0px 4px 6px,
-      rgba(242, 32, 112, 0.17) 0px 12px 13px,
-      rgba(232, 69, 104, 0.09) 0px -3px 5px;
+    box-shadow: $secondary-box-shadow;
     cursor: pointer;
     outline: 2px solid $accent;
   }

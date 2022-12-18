@@ -1,0 +1,89 @@
+.button {
+  display: inline-block;
+  padding: 12px 56px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $white;
+  background: $accent-gradient;
+  border-radius: 100px;
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+
+  transition: color 250ms $cubic, outline 500ms $cubic, box-shadow 500ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+    outline: 2px solid $accent;
+    box-shadow: $secondary-box-shadow;
+  }
+}
+
+.button__hero {
+  position: absolute;
+  display: inline-block;
+  padding: 15px 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  outline: none;
+  border: 2px solid $accent;
+  border-radius: 100px;
+  transition: all 250ms $cubic;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+}
+
+.button__white {
+  background-color: $white;
+  color: $accent;
+
+  &::after {
+    background-color: $white;
+  }
+}
+
+.button__animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

@@ -1,4 +1,4 @@
-.about {
+.intro {
   position: relative;
   z-index: 123;
   padding-top: 80px;
@@ -7,11 +7,11 @@
   justify-content: space-between;
 }
 
-.about__info {
+.intro__info {
   width: 542px;
 }
 
-.about__title {
+.intro__title {
   position: relative;
   display: inline-block;
   margin-bottom: 68px;
@@ -37,6 +37,6 @@
   }
 }
 
-.about__desc {
+.intro__desc {
   margin-bottom: 35px;
 }

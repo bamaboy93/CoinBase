@@ -1,26 +1,6 @@
 .clients-overlay {
   position: relative;
   background: $accent-gradient;
-  &::before {
-    position: absolute;
-    top: 243px;
-    left: 213px;
-    content: "";
-    width: 155px;
-    height: 130px;
-    background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
-    border-radius: 50%;
-  }
-  &::after {
-    position: absolute;
-    bottom: 143px;
-    right: 113px;
-    content: "";
-    width: 91px;
-    height: 76px;
-    background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
-    border-radius: 50%;
-  }
 }
 
 .clients-overlayTop {
@@ -92,6 +72,10 @@
   height: 84px;
   background: $accent-gradient;
   border-radius: 50%;
+  box-shadow: $secondary-box-shadow;
+  background-image: url(../../images/user-avatars/user1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .customers__item:nth-child(2) {
   position: absolute;
@@ -101,6 +85,10 @@
   height: 137px;
   background: $accent-gradient;
   border-radius: 50%;
+  box-shadow: $secondary-box-shadow;
+  background-image: url(../../images/user-avatars/user2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .customers__item:nth-child(3) {
   position: absolute;
@@ -110,6 +98,10 @@
   height: 45px;
   background: $accent-gradient;
   border-radius: 50%;
+  box-shadow: $secondary-box-shadow;
+  background-image: url(../../images/user-avatars/user3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .customers__item:nth-child(4) {
   position: absolute;
@@ -119,6 +111,10 @@
   height: 68px;
   background: $accent-gradient;
   border-radius: 50%;
+  box-shadow: $secondary-box-shadow;
+  background-image: url(../../images/user-avatars/user4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .customers__item:nth-child(5) {
   position: absolute;
@@ -128,6 +124,10 @@
   height: 58px;
   background: $accent-gradient;
   border-radius: 50%;
+  box-shadow: $secondary-box-shadow;
+  background-image: url(../../images/user-avatars/user5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .customers__item:nth-child(6) {
   position: absolute;
@@ -137,6 +137,10 @@
   height: 84px;
   background: $accent-gradient;
   border-radius: 50%;
+  box-shadow: $secondary-box-shadow;
+  background-image: url(../../images/user-avatars/user6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .customers__item:nth-child(7) {
   position: absolute;
@@ -146,6 +150,10 @@
   height: 65px;
   background: $accent-gradient;
   border-radius: 50%;
+  box-shadow: $secondary-box-shadow;
+  background-image: url(../../images/user-avatars/user7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .customers__item:nth-child(8) {
   position: absolute;
@@ -155,6 +163,10 @@
   height: 84px;
   background: $accent-gradient;
   border-radius: 50%;
+  box-shadow: $secondary-box-shadow;
+  background-image: url(../../images/user-avatars/user8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .customers__item:nth-child(9) {
   position: absolute;
@@ -164,6 +176,10 @@
   height: 45px;
   background: $accent-gradient;
   border-radius: 50%;
+  box-shadow: $secondary-box-shadow;
+  background-image: url(../../images/user-avatars/user9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .customers__item:nth-child(10) {
   position: absolute;
@@ -173,6 +189,10 @@
   height: 84px;
   background: $accent-gradient;
   border-radius: 50%;
+  box-shadow: $secondary-box-shadow;
+  background-image: url(../../images/user-avatars/user10.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .customers__item:nth-child(11) {
   position: absolute;
@@ -182,6 +202,10 @@
   height: 84px;
   background: $accent-gradient;
   border-radius: 50%;
+  box-shadow: $secondary-box-shadow;
+  background-image: url(../../images/user-avatars/user11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .customers__item:nth-child(12) {
   position: absolute;
@@ -191,6 +215,10 @@
   height: 84px;
   background: $accent-gradient;
   border-radius: 50%;
+  box-shadow: $secondary-box-shadow;
+  background-image: url(../../images/user-avatars/user12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .customers__item:nth-child(13) {
   position: absolute;
@@ -200,4 +228,8 @@
   height: 84px;
   background: $accent-gradient;
   border-radius: 50%;
+  box-shadow: $secondary-box-shadow;
+  background-image: url(../../images/user-avatars/user13.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

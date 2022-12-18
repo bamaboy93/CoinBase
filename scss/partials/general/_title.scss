@@ -1,0 +1,25 @@
+.title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 77px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 2.3;
+
+  background: $accent-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 110px;
+    display: inline-block;
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: $accent;
+    border-radius: 5px;
+  }
+}

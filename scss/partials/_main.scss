@@ -1,13 +1,19 @@
+@import "./overlays";
+@import "./general/title";
+@import "./x/buttons";
+
 @import "./header";
-@import "./hero";
-@import "./greet";
-@import "./transaction";
-@import "./about";
-@import "./_trade";
-@import "./blog";
-@import "./_clients";
-@import "./_app";
-@import "./_sub";
+@import "./homepage/hero";
+@import "./sub";
 @import "./footer";
 
-@import "./buttons";
+// Homepage
+@import "./homepage/greet";
+@import "./homepage/transaction";
+@import "./homepage/intro";
+@import "./homepage/trade";
+@import "./homepage/blog";
+@import "./homepage/clients";
+@import "./homepage/app";
+
+// About

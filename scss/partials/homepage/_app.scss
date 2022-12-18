@@ -55,6 +55,13 @@
   }
 }
 
+.app__stores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 .app__mobile {
   width: 568px;
   height: 559px;

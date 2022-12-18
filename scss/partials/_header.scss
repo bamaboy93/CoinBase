@@ -29,5 +29,73 @@
 }
 
 .header__buttons {
+  display: flex;
+  align-items: center;
   margin-left: auto;
+}
+
+.dropdown {
+  position: relative;
+  margin-right: 40px;
+
+  &:hover .dropdown__wrapper {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+  }
+}
+
+.dropdown__link {
+  position: relative;
+  padding-right: 5px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 100%;
+    top: calc(50% + 6px);
+    transform: translateY(-50%);
+    border: 4px solid transparent;
+    border-top-color: $black;
+  }
+}
+
+.dropdown__wrapper {
+  position: absolute;
+  padding: 6px 0 6px 12px;
+
+  width: 152px;
+  z-index: 777;
+  top: 103%;
+  left: 50%;
+  transform: translate(-50%, 15px);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 250ms ease;
+  background: transparent;
+  outline: 1px solid $accent;
+  box-shadow: $main-box-shadow;
+  border-radius: 5px;
+}
+
+.dropdown__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.dropdown__list--link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $white;
+  }
 }
