@@ -19,6 +19,7 @@
   outline: 2px solid $grey;
   background: transparent;
   border: transparent;
+  box-shadow: $main-box-shadow;
   &:focus {
     box-shadow: $secondary-box-shadow;
     cursor: pointer;

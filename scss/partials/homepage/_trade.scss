@@ -51,7 +51,7 @@
   border: solid $border transparent;
   border-radius: 15px;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: 0;

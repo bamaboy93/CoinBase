@@ -40,7 +40,9 @@
             <a class="header-nav__link" href="./blog.html">Blog</a>
           </li>
           <li class="header-nav__item">
-            <a class="header-nav__link" href="./contact.html">Contact Us</a>
+            <a class="header-nav__link current" href="./contact.html"
+              >Contact Us</a
+            >
           </li>
         </ul>
       </nav>
@@ -70,31 +72,49 @@
               24/7 Customer support Including weekends.
             </h1>
             <p class="hero__desc">
-              We're always there ti help regardless the number of queries at
+              We're always there to help regardless the number of queries at
               hand.
             </p>
           </div>
           <img
-            src="./images/heroImage.png"
-            alt="smartphone picture"
-            width="628"
-            height="512"
+            src="./images/contactus/hero-image.png"
+            alt="support assistants working picture"
+            width="569"
+            height="561"
           />
         </section>
         <div class="hero-accent"></div>
       </div>
       <!-- Section Support -->
       <section class="support container">
-        <p>
+        <p class="support__warn">
           Please note that all message will be replied within the next 12hours
         </p>
-        <form action="">
-          <input type="name" />
-          <input type="email" />
-          <input type="text" />
-          <button type="submit">PUBLISH</button>
+        <form class="form" action="">
+          <input class="form__name input" type="name" placeholder="Name *" />
+          <input class="form__email input" type="email" placeholder="Email *" />
+          <div class="form__comment">
+            <textarea
+              class="form__textarea input"
+              name="comment"
+              id="comment"
+              rows="10"
+              placeholder="Your Comment"
+            ></textarea>
+          </div>
+          <button class="button" type="submit">PUBLISH</button>
         </form>
-        <div></div>
+        <div class="support__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4923898988645!2d30.52108076569786!3d50.450555029475446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50f8b6e3c3%3A0xb528dc4d6dadc4f8!2z0JzQsNC50LTQsNC9INCd0LXQt9Cw0LLQuNGB0LjQvNC-0YHRgtC4LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1671543597792!5m2!1sru!2sua"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
     <!-- Footer -->

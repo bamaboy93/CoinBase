@@ -1,11 +1,13 @@
 @import "./general/overlays";
 @import "./general/title";
 @import "./general/buttons";
+@import "./general/modal";
 
-@import "./header";
-@import "./hero";
-@import "./sub";
-@import "./footer";
+// General Parts
+@import "./general-parts/header";
+@import "./general-parts/hero";
+@import "./general-parts/sub";
+@import "./general-parts/footer";
 
 // Homepage
 @import "./homepage/greet";
@@ -20,3 +22,9 @@
 @import "./about/about";
 @import "./about/history";
 @import "./about/team";
+
+// Blog
+@import "./blog/posts";
+
+// Contact Us
+@import "./contactus/support";

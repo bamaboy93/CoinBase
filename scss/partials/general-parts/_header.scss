@@ -16,11 +16,27 @@
 }
 
 .header-nav__link {
+  position: relative;
   padding: 36px 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   transition: color 250ms $cubic;
+
+  &.current {
+    color: $accent;
+    &::after {
+      position: absolute;
+      left: 50%;
+      bottom: 25%;
+      transform: translateX(-50%);
+      content: "";
+      width: 25px;
+      height: 4px;
+      background-color: $accent;
+      border-radius: 15px;
+    }
+  }
 
   &:hover,
   &:focus {

@@ -9,6 +9,10 @@ body {
   background-color: $white;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .container-wide {
   width: 1300px;
   padding: 0 15px;

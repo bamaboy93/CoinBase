@@ -1,0 +1,57 @@
+.support {
+  position: relative;
+  text-align: center;
+  padding-bottom: 90px;
+  z-index: 777;
+}
+
+.support__warn {
+  margin-bottom: 50px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input {
+  font-size: 14px;
+  line-height: 1.4;
+  background: $white;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  box-shadow: $main-box-shadow;
+  transition: box-shadow 250ms $cubic;
+
+  &:focus {
+    box-shadow: $secondary-box-shadow;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.form__name,
+.form__email {
+  margin-bottom: 30px;
+  width: 347px;
+  padding: 19px 0 21px 20px;
+}
+
+.form__name {
+  margin-right: 38px;
+}
+
+.form__comment {
+  margin-bottom: 30px;
+}
+
+.form__textarea {
+  width: 732px;
+  padding: 20px 20px 0 20px;
+}
+
+.support__map {
+  margin-top: 90px;
+}

@@ -31,7 +31,7 @@
       <nav class="header-nav">
         <ul class="header-nav__list">
           <li class="header-nav__item">
-            <a class="header-nav__link" href="./index.html">Home</a>
+            <a class="header-nav__link current" href="./index.html">Home</a>
           </li>
           <li class="header-nav__item">
             <a class="header-nav__link" href="./about.html">About Us</a>
@@ -58,7 +58,7 @@
             </ul>
           </div>
         </div>
-        <button class="button" type="button">LOGIN</button>
+        <button class="button" type="button" data-modal-open>LOGIN</button>
       </div>
     </header>
     <main>
@@ -528,5 +528,58 @@
         </div>
       </footer>
     </div>
+    <!-- Modal Windows -->
+    <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <h2 class="modal__title">Welcome back!</h2>
+        <p class="modal__desc">Kindly fill in your login details to proceed</p>
+        <input
+          class="modal__input modal__input--email"
+          type="email"
+          placeholder="Email"
+        />
+        <input class="modal__input" type="password" placeholder="Password" />
+        <div class="modal__link">
+          <a class="modal__link--redirect" href="#">Forgot your password?</a>
+        </div>
+        <button type="submit" class="button">LOGIN</button>
+        <p class="modal__sign">Don't have an account yet?</p>
+        <button class="modal__button" type="button">Sign Up!</button>
+      </div>
+    </div> -->
+    <!-- SignUp -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <h2 class="modal__title">Sign up</h2>
+        <p class="modal__desc">There's no charge upon registration</p>
+        <input
+          class="modal__input modal__input--email"
+          type="text"
+          placeholder="Full Name"
+        />
+        <input
+          class="modal__input modal__input--email"
+          type="email"
+          placeholder="Email"
+        />
+        <input
+          class="modal__input modal__input--email"
+          type="password"
+          placeholder="Password"
+        />
+        <input
+          class="modal__input"
+          type="password"
+          placeholder="Confirm Password"
+        />
+        <div class="modal__link">
+          <a class="modal__link--redirect" href="#">Forgot your password?</a>
+        </div>
+        <button type="submit" class="button">SIGN UP</button>
+        <p class="modal__sign">Don't have an account yet?</p>
+        <button class="modal__button" type="button">Login</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
