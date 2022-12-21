@@ -50,15 +50,19 @@
           <div class="dropdown__wrapper">
             <ul class="dropdown__list">
               <li class="dropdown__item">
-                <a class="dropdown__list--link" href="">Sell Bitcoin</a>
+                <a class="dropdown__list--link modal-link" href="#modal3"
+                  >Sell Bitcoin</a
+                >
               </li>
               <li class="dropdown__item">
-                <a class="dropdown__list--link" href="">Sell Giftcard</a>
+                <a class="dropdown__list--link modal-link" href="#modal4"
+                  >Sell Giftcard</a
+                >
               </li>
             </ul>
           </div>
         </div>
-        <button class="button" type="button" data-modal-open>LOGIN</button>
+        <a class="button modal-link" href="#modal">LOGIN</a>
       </div>
     </header>
     <main>
@@ -528,6 +532,27 @@
         </div>
       </footer>
     </div>
+    <div id="modal" class="modal">
+      <div class="modal__body">
+        <div class="modal__content">
+          <h2 class="modal__title">Welcome back!</h2>
+          <p class="modal__desc">
+            Kindly fill in your login details to proceed
+          </p>
+          <a href="#modal2" class="modal-link">Modal 2</a>
+        </div>
+      </div>
+    </div>
+    <div id="modal2" class="modal">
+      <div class="modal__body">
+        <div class="modal__content">
+          <h2 class="modal__title">Welcome!</h2>
+          <p class="modal__desc">
+            Kindly fill in your login details to proceed
+          </p>
+        </div>
+      </div>
+    </div>
     <!-- Modal Windows -->
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -548,7 +573,7 @@
       </div>
     </div> -->
     <!-- SignUp -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <h2 class="modal__title">Sign up</h2>
         <p class="modal__desc">There's no charge upon registration</p>
@@ -579,7 +604,109 @@
         <p class="modal__sign">Don't have an account yet?</p>
         <button class="modal__button" type="button">Login</button>
       </div>
-    </div>
+    </div> -->
+    <!-- Cards Modal -->
+    <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="modal modal__cards">
+        <h2 class="modal__title">Got Gift Cards For Sale?</h2>
+        <p class="modal__desc">
+          Choose your preferred card type to continue the exchange process
+        </p>
+        <ul class="cards">
+          <li class="cards__item">
+            <button type="button" class="cards__card cards__card--amazon">
+              <svg class="cards__card--iconTop" width="21" height="6">
+                <use href="./images/sprite.svg#icon-amazon-b"></use>
+              </svg>
+
+              <svg class="cards__card--iconMain" width="42" height="57">
+                <use href="./images/sprite.svg#icon-amazon-s"></use>
+              </svg>
+              Amazon
+            </button>
+          </li>
+          <li class="cards__item">
+            <button type="button" class="cards__card cards__card--apple">
+              <svg class="cards__card--iconTop" width="10" height="6">
+                <use href="./images/sprite.svg#icon-apple"></use>
+              </svg>
+
+              <svg class="cards__card--iconMain" width="56" height="55">
+                <use href="./images/sprite.svg#icon-apple"></use>
+              </svg>
+              App Store & iTunes
+            </button>
+          </li>
+          <li class="cards__item">
+            <button type="button" class="cards__card cards__card--steam">
+              <svg class="cards__card--iconTop" width="9" height="9">
+                <use href="./images/sprite.svg#icon-steam"></use>
+              </svg>
+
+              <svg class="cards__card--iconMain" width="48" height="48">
+                <use href="./images/sprite.svg#icon-steam"></use>
+              </svg>
+              STEAM
+            </button>
+          </li>
+          <li class="cards__item">
+            <button type="button" class="cards__card cards__card--google">
+              <svg class="cards__card--iconTop" width="11" height="11">
+                <use href="./images/sprite.svg#icon-google-play"></use>
+              </svg>
+
+              <svg class="cards__card--iconMain" width="51" height="51">
+                <use href="./images/sprite.svg#icon-google-play"></use>
+              </svg>
+              Google Play
+            </button>
+          </li>
+          <li class="cards__item">
+            <button type="button" class="cards__card cards__card--others">
+              <svg class="cards__card--iconTop" width="14" height="8">
+                <use href="./images/sprite.svg#icon-voucher"></use>
+              </svg>
+
+              <svg class="cards__card--iconMain" width="62" height="36">
+                <use href="./images/sprite.svg#icon-voucher"></use>
+              </svg>
+              OTHERS
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+    <!-- Crypto Cards Modal -->
+    <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="modal modal__cards">
+        <h2 class="modal__title">Sell bitcoin</h2>
+        <p class="modal__desc">Choose your preffered product to continue</p>
+        <ul class="crypto-cards">
+          <li class="crypto-cards__item">
+            <button
+              type="button"
+              class="cards__card crypto-cards__card crypto-cards__card--bitcoin"
+            >
+              <svg class="crypto-cards__card--icon" width="44" height="44">
+                <use href="./images/sprite.svg#icon-bitcoin"></use>
+              </svg>
+              Bitcoin
+            </button>
+          </li>
+          <li class="crypto-cards__item">
+            <button
+              type="button"
+              class="cards__card crypto-cards__card crypto-cards__card--eth"
+            >
+              <svg class="crypto-cards__card--icon" width="24" height="44">
+                <use href="./images/sprite.svg#icon-eth"></use>
+              </svg>
+              Ethereum
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
