@@ -1,74 +1,83 @@
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector("[data-modal-open]"),
-//     modal: document.querySelector("[data-modal]"),
-//   };
+(() => {
+  const body = document.querySelector("body");
+  const modalButtons = document.querySelectorAll(".js-open-modal");
+  const modalCloseButtons = document.querySelectorAll(".js-close-modal");
+  const modal = document.querySelectorAll(".backdrop");
 
-//   refs.openModalBtn.addEventListener("click", toggleModal);
-//   refs.modal.addEventListener("click", onBackdropClick);
+  let unlock = true;
+  const timeout = 250;
 
-//   function onKeydown(e) {
-//     if (e.code === "Escape") {
-//       toggleModal();
-//       window.removeEventListener("keydown", onKeydown);
-//     }
-//   }
+  modalButtons.forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      const modalId = this.getAttribute("data-modal"),
+        modalElem = document.querySelector(
+          '.backdrop[data-modal="' + modalId + '"]'
+        );
 
-//   function onBackdropClick(e) {
-//     if (e.currentTarget === e.target) {
-//       toggleModal();
-//     }
-//   }
-
-//   function toggleModal() {
-//     document.body.classList.toggle("modal-open");
-//     refs.modal.classList.toggle("is-hidden");
-//     window.addEventListener("keydown", onKeydown);
-//   }
-// })();
-
-const modalLinks = document.querySelectorAll(".modal-link");
-const body = document.querySelector("body");
-const lockPadding = document.querySelectorAll(".lock-padding");
-
-let unlock = true;
-
-const timeout = 250;
-
-if (modalLinks.length > 0) {
-  for (let index = 0; index < modalLinks.length; index++) {
-    const modalLink = modalLinks[index];
-    modalLink.addEventListener("click", function (e) {
-      const modalName = modalLink.getAttribute("href").replace("#", "");
-      const currentModal = document.getElementById(modalName);
-      modalOpen(currentModal);
-      e.preventDefault();
+      modalOpen(modalElem);
     });
-  }
-}
+  });
 
-function modalOpen(currentModal) {
-  if (currentModal && unlock) {
-    const modalActive = document.querySelector(".modal.open");
-    if (modalActive) {
-      modalClose(modalActive, false);
-    } else {
-      bodyLock();
-    }
-    currentModal.classList.add(".open");
-    currentModal.addEventListener("click", function (e) {
-      if (!e.target.closest(".modal__content")) {
-        modalClose(e.target.closest(".modal"));
+  modalCloseButtons.forEach(function (el) {
+    el.addEventListener("click", function () {
+      modalClose(el.closest(".backdrop"));
+    });
+  });
+
+  modal.forEach(function (elem) {
+    elem.addEventListener("click", function (e) {
+      if (e.currentTarget === e.target) {
+        modalClose(elem);
       }
     });
-  }
-}
+  });
 
-function modalClose(modalActive, doUnlock = true) {
-  if (unlock) {
-    modalActive.classList.remove("open");
-    if (doUnlock) {
-      bodyLock();
+  document.addEventListener("keydown", function (e) {
+    if (e.code === "Escape") {
+      const modalActive = document.querySelector(".backdrop.is-open");
+      modalClose(modalActive);
+    }
+  });
+
+  function modalOpen(modalElem) {
+    if (modalElem && unlock) {
+      const modalActive = document.querySelector(".backdrop.is-open");
+      if (modalActive) {
+        modalClose(modalActive, false);
+      } else {
+        bodyLock();
+      }
+
+      modalElem.classList.add("is-open");
     }
   }
-}
+
+  function modalClose(modalActive, doUnlock = true) {
+    if (unlock) {
+      modalActive.classList.remove("is-open");
+      if (doUnlock) {
+        bodyUnlock();
+      }
+    }
+  }
+
+  function bodyLock() {
+    body.classList.add("lock");
+
+    unlock = false;
+    setTimeout(() => {
+      unlock = true;
+    }, timeout);
+  }
+
+  function bodyUnlock() {
+    setTimeout(() => {
+      body.classList.remove("lock");
+    }, timeout);
+
+    unlock = false;
+    setTimeout(() => {
+      unlock = true;
+    }, timeout);
+  }
+})();

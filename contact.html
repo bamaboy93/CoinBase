@@ -18,215 +18,277 @@
     <title>Coinbase | Contact Us</title>
   </head>
   <body>
-    <!-- Header -->
-    <header class="header container-wide">
-      <a href="/"
-        ><img
-          class="header__logo"
-          src="./images/Logo.png"
-          alt="logotype"
-          width="142"
-          height="34"
-      /></a>
-      <nav class="header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="./index.html">Home</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="./about.html">About Us</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="./blog.html">Blog</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link current" href="./contact.html"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="header__buttons">
-        <div class="dropdown">
-          <a class="dropdown__link" href="#">Sell Bitcoin/ Giftcard</a>
-          <div class="dropdown__wrapper">
-            <ul class="dropdown__list">
-              <li class="dropdown__item">
-                <a class="dropdown__list--link" href="">Sell Bitcoin</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__list--link" href="">Sell Giftcard</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <button class="button" type="button">LOGIN</button>
-      </div>
-    </header>
-    <main>
-      <!-- Hero -->
-      <div class="hero-overlay">
-        <section class="hero container">
-          <div class="hero__wrapper">
-            <h1 class="hero__title">
-              24/7 Customer support Including weekends.
-            </h1>
-            <p class="hero__desc">
-              We're always there to help regardless the number of queries at
-              hand.
-            </p>
-          </div>
-          <img
-            src="./images/contactus/hero-image.png"
-            alt="support assistants working picture"
-            width="569"
-            height="561"
-          />
-        </section>
-        <div class="hero-accent"></div>
-      </div>
-      <!-- Section Support -->
-      <section class="support container">
-        <p class="support__warn">
-          Please note that all message will be replied within the next 12hours
-        </p>
-        <form class="form" action="">
-          <input class="form__name input" type="name" placeholder="Name *" />
-          <input class="form__email input" type="email" placeholder="Email *" />
-          <div class="form__comment">
-            <textarea
-              class="form__textarea input"
-              name="comment"
-              id="comment"
-              rows="10"
-              placeholder="Your Comment"
-            ></textarea>
-          </div>
-          <button class="button" type="submit">PUBLISH</button>
-        </form>
-        <div class="support__map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4923898988645!2d30.52108076569786!3d50.450555029475446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50f8b6e3c3%3A0xb528dc4d6dadc4f8!2z0JzQsNC50LTQsNC9INCd0LXQt9Cw0LLQuNGB0LjQvNC-0YHRgtC4LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1671543597792!5m2!1sru!2sua"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <div class="footer-overlay">
-      <footer class="footer container-wide">
-        <div class="footer-info">
-          <img
-            src="./images/FooterLogo.png"
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header container-wide">
+        <a href="/"
+          ><img
+            class="header__logo"
+            src="./images/Logo.png"
             alt="logotype"
-            width="132"
-            height="28"
-          />
-          <p class="footer-info__desc">
-            Fusce ut elit aliquet, fermentum leo vel, tempus nunc. Fusce eu
-            rhoncus augue. Fusce vel metus pharetra, fermentum
+            width="142"
+            height="34"
+        /></a>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./index.html">Home</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./about.html">About Us</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./blog.html">Blog</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link current" href="./contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header__buttons">
+          <button class="button js-open-modal" type="button" data-modal="login">
+            LOGIN
+          </button>
+        </div>
+      </header>
+      <main>
+        <!-- Hero -->
+        <div class="hero-overlay">
+          <section class="hero container">
+            <div class="hero__wrapper">
+              <h1 class="hero__title">
+                24/7 Customer support Including weekends.
+              </h1>
+              <p class="hero__desc">
+                We're always there to help regardless the number of queries at
+                hand.
+              </p>
+            </div>
+            <img
+              src="./images/contactus/hero-image.png"
+              alt="support assistants working picture"
+              width="569"
+              height="561"
+            />
+          </section>
+          <div class="hero-accent"></div>
+        </div>
+        <!-- Section Support -->
+        <section class="support container">
+          <p class="support__warn">
+            Please note that all message will be replied within the next 12hours
           </p>
-          <ul class="footer-info__list">
-            <li class="footer-info__item">
-              <a class="footer-info__link" href=""
-                ><svg width="20" height="20">
-                  <use href="./images/sprite.svg#icon-google"></use></svg
-              ></a>
-            </li>
-            <li class="footer-info__item">
-              <a class="footer-info__link" href=""
-                ><svg width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="footer-info__item">
-              <a class="footer-info__link" href=""
-                ><svg width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="footer-info__item">
-              <a class="footer-info__link" href=""
-                ><svg width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-          </ul>
-          <p>© 2019 Designed by Cr8tiv_yemmy</p>
-        </div>
-        <div class="footer-actions">
-          <div class="footer-links">
-            <h3 class="footer__title">CoinBase Links</h3>
-            <ul class="footer-links__list">
-              <li class="footer-links__item">
-                <a class="footer-links__link" href="">Home</a>
+          <form class="form" action="">
+            <input class="form__name input" type="name" placeholder="Name *" />
+            <input
+              class="form__email input"
+              type="email"
+              placeholder="Email *"
+            />
+            <div class="form__comment">
+              <textarea
+                class="form__textarea input"
+                name="comment"
+                id="comment"
+                rows="10"
+                placeholder="Your Comment"
+              ></textarea>
+            </div>
+            <button class="button" type="submit">PUBLISH</button>
+          </form>
+          <div class="support__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4923898988645!2d30.52108076569786!3d50.450555029475446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50f8b6e3c3%3A0xb528dc4d6dadc4f8!2z0JzQsNC50LTQsNC9INCd0LXQt9Cw0LLQuNGB0LjQvNC-0YHRgtC4LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1671543597792!5m2!1sru!2sua"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <div class="footer-overlay">
+        <footer class="footer container-wide">
+          <div class="footer-info">
+            <img
+              src="./images/FooterLogo.png"
+              alt="logotype"
+              width="132"
+              height="28"
+            />
+            <p class="footer-info__desc">
+              Fusce ut elit aliquet, fermentum leo vel, tempus nunc. Fusce eu
+              rhoncus augue. Fusce vel metus pharetra, fermentum
+            </p>
+            <ul class="footer-info__list">
+              <li class="footer-info__item">
+                <a class="footer-info__link" href=""
+                  ><svg width="20" height="20">
+                    <use href="./images/sprite.svg#icon-google"></use></svg
+                ></a>
               </li>
-              <li class="footer-links__item">
-                <a class="footer-links__link" href="">About Us</a>
+              <li class="footer-info__item">
+                <a class="footer-info__link" href=""
+                  ><svg width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use></svg
+                ></a>
               </li>
-              <li class="footer-links__item">
-                <a class="footer-links__link" href="">Blog</a>
+              <li class="footer-info__item">
+                <a class="footer-info__link" href=""
+                  ><svg width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use></svg
+                ></a>
               </li>
-              <li class="footer-links__item">
-                <a class="footer-links__link" href="">Sell</a>
-              </li>
-              <li class="footer-links__item">
-                <a class="footer-links__link" href="">Contact Us</a>
+              <li class="footer-info__item">
+                <a class="footer-info__link" href=""
+                  ><svg width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use></svg
+                ></a>
               </li>
             </ul>
+            <p>© 2019 Designed by Cr8tiv_yemmy</p>
           </div>
-          <div class="footer-links">
-            <h3 class="footer__title">Contact Us</h3>
-            <ul class="footer-links__list">
-              <li class="footer-links__item">
-                <a class="footer-links__link" href="">(+234) 137632128</a>
-              </li>
-              <li class="footer-links__item">
-                <a class="footer-links__link" href="">Coinbase@yahoo.com</a>
-              </li>
-              <li class="footer-links__item">
-                <p class="footer-links__adress">Address goes here</p>
-              </li>
-            </ul>
-            <a class="footer-links__app" href="#">Download Our App</a>
+          <div class="footer-actions">
+            <div class="footer-links">
+              <h3 class="footer__title">CoinBase Links</h3>
+              <ul class="footer-links__list">
+                <li class="footer-links__item">
+                  <a class="footer-links__link" href="">Home</a>
+                </li>
+                <li class="footer-links__item">
+                  <a class="footer-links__link" href="">About Us</a>
+                </li>
+                <li class="footer-links__item">
+                  <a class="footer-links__link" href="">Blog</a>
+                </li>
+                <li class="footer-links__item">
+                  <a class="footer-links__link" href="">Sell</a>
+                </li>
+                <li class="footer-links__item">
+                  <a class="footer-links__link" href="">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <h3 class="footer__title">Contact Us</h3>
+              <ul class="footer-links__list">
+                <li class="footer-links__item">
+                  <a class="footer-links__link" href="">(+234) 137632128</a>
+                </li>
+                <li class="footer-links__item">
+                  <a class="footer-links__link" href="">Coinbase@yahoo.com</a>
+                </li>
+                <li class="footer-links__item">
+                  <p class="footer-links__adress">Address goes here</p>
+                </li>
+              </ul>
+              <a class="footer-links__app" href="#">Download Our App</a>
+            </div>
           </div>
-        </div>
-        <div class="footer-social">
-          <h3 class="footer__title">CoinBase Instagram</h3>
+          <div class="footer-social">
+            <h3 class="footer__title">CoinBase Instagram</h3>
 
-          <ul class="instagram">
-            <li class="instagram__item">
-              <a href="" class="instagram__link"></a>
-            </li>
-            <li class="instagram__item">
-              <a href="" class="instagram__link"></a>
-            </li>
-            <li class="instagram__item">
-              <a href="" class="instagram__link"></a>
-            </li>
-            <li class="instagram__item">
-              <a href="" class="instagram__link"></a>
-            </li>
-            <li class="instagram__item">
-              <a href="" class="instagram__link"></a>
-            </li>
-            <li class="instagram__item">
-              <a href="" class="instagram__link"></a>
-            </li>
-            <li class="instagram__item">
-              <a href="" class="instagram__link"></a>
-            </li>
-            <li class="instagram__item">
-              <a href="" class="instagram__link"></a>
-            </li>
-          </ul>
-        </div>
-      </footer>
+            <ul class="instagram">
+              <li class="instagram__item">
+                <a href="" class="instagram__link"></a>
+              </li>
+              <li class="instagram__item">
+                <a href="" class="instagram__link"></a>
+              </li>
+              <li class="instagram__item">
+                <a href="" class="instagram__link"></a>
+              </li>
+              <li class="instagram__item">
+                <a href="" class="instagram__link"></a>
+              </li>
+              <li class="instagram__item">
+                <a href="" class="instagram__link"></a>
+              </li>
+              <li class="instagram__item">
+                <a href="" class="instagram__link"></a>
+              </li>
+              <li class="instagram__item">
+                <a href="" class="instagram__link"></a>
+              </li>
+              <li class="instagram__item">
+                <a href="" class="instagram__link"></a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
     </div>
+    <!-- Modal Windows -->
+    <div class="backdrop" data-modal="login">
+      <div class="modal">
+        <button class="modal__button js-close-modal">&#10006;</button>
+        <h2 class="modal__title">Welcome back!</h2>
+        <p class="modal__desc">Kindly fill in your login details to proceed</p>
+        <input
+          class="modal__input modal__input--email"
+          type="email"
+          placeholder="Email"
+        />
+        <input class="modal__input" type="password" placeholder="Password" />
+        <div class="modal__link">
+          <a class="modal__link--redirect" href="#">Forgot your password?</a>
+        </div>
+        <button type="submit" class="button">LOGIN</button>
+        <p class="modal__sign">Don't have an account yet?</p>
+        <button
+          class="modal__redirect js-open-modal"
+          type="button"
+          data-modal="signup"
+        >
+          Sign Up!
+        </button>
+      </div>
+    </div>
+    <!-- SignUp -->
+    <div class="backdrop" data-modal="signup">
+      <div class="modal">
+        <button class="modal__button js-close-modal">&#10006;</button>
+        <h2 class="modal__title">Sign up</h2>
+        <p class="modal__desc">There's no charge upon registration</p>
+        <input
+          class="modal__input modal__input--email"
+          type="text"
+          placeholder="Full Name"
+        />
+        <input
+          class="modal__input modal__input--email"
+          type="email"
+          placeholder="Email"
+        />
+        <input
+          class="modal__input modal__input--email"
+          type="password"
+          placeholder="Password"
+        />
+        <input
+          class="modal__input"
+          type="password"
+          placeholder="Confirm Password"
+        />
+        <div class="modal__link">
+          <a class="modal__link--redirect" href="#">Forgot your password?</a>
+        </div>
+        <button type="submit" class="button">SIGN UP</button>
+        <p class="modal__sign">Don't have an account yet?</p>
+        <button
+          class="modal__redirect js-open-modal"
+          type="button"
+          data-modal="login"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,256 +1,244 @@
-// .backdrop {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   padding: 93px 15px 0 15px;
-//   width: 100%;
-//   height: 100%;
-
-//   background-color: rgba(0, 0, 0, 0.5);
-//   overflow-y: scroll;
-//   opacity: 1;
-//   transition: opacity 250ms $cubic;
-// }
-// .backdrop.is-hidden {
-//   opacity: 0;
-//   pointer-events: none;
-// }
-// .backdrop.is-hidden .modal {
-//   transform: scale(0.9);
-// }
-
-// // Login - Sugn Up
-// .modal {
-//   max-width: 644px;
-//   margin: 0 auto;
-//   padding: 52px 160px 55px 160px;
-//   text-align: center;
-//   transform: scale(1);
-//   transition: transform 250ms $cubic;
-
-//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//     0px 2px 1px rgba(0, 0, 0, 0.2);
-//   border-radius: 30px;
-//   background-color: $white;
-// }
-
-// .modal__title {
-//   margin-bottom: 20px;
-//   font-weight: 700;
-//   font-size: 24px;
-//   line-height: 1.5;
-
-//   background: $accent-gradient;
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   background-clip: text;
-// }
-
-// .modal__desc {
-//   margin-bottom: 50px;
-//   font-size: 16px;
-//   line-height: 1.5;
-// }
-
-// .modal__input {
-//   width: 100%;
-//   padding: 19px 0 21px 20px;
-//   font-size: 14px;
-//   line-height: 1.4;
-//   background: $white;
-//   border: 1px solid #d1d1d1;
-//   border-radius: 5px;
-//   box-shadow: $main-box-shadow;
-//   transition: box-shadow 250ms $cubic;
-
-//   &--email {
-//     margin-bottom: 30px;
-//   }
-
-//   &:focus {
-//     box-shadow: $secondary-box-shadow;
-//     outline: none;
-//     cursor: pointer;
-//   }
-// }
-
-// .modal__link {
-//   margin-top: 17px;
-//   margin-bottom: 42px;
-//   text-align: right;
-
-//   &--redirect {
-//     display: inline-block;
-//     font-size: 12px;
-//     line-height: 1.6;
-//     color: #2f2f2f;
-//     transition: color 250ms $cubic;
-//     &:after {
-//       content: "";
-//       display: block;
-//       margin: auto;
-//       height: 2px;
-//       width: 0px;
-//       background: transparent;
-//       transition: width 0.5s ease, background-color 0.5s ease;
-//     }
-//     &:hover:after {
-//       width: 100%;
-//       background: $black;
-//     }
-//   }
-// }
-
-// .modal__sign {
-//   margin-top: 38px;
-//   font-size: 12px;
-//   line-height: 1.6;
-
-//   color: #2f2f2f;
-// }
-
-// .modal__button {
-//   outline: none;
-//   border: none;
-//   background: transparent;
-//   cursor: pointer;
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1.6;
-// }
-
-// // Cards
-// .modal__cards {
-//   max-width: 888px;
-//   padding: 52px 74px 97px 74px;
-// }
-
-// .cards {
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 20px;
-// }
-
-// .cards__item {
-//   flex-basis: calc((100% - 40px) / 3);
-// }
-
-// .cards__card {
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   width: 231px;
-//   height: 160px;
-//   padding-top: 43px;
-//   padding-bottom: 34px;
-
-//   cursor: pointer;
-
-//   border: transparent;
-//   outline: none;
-//   border-radius: 15px;
-//   box-shadow: $main-box-shadow;
-//   color: $white;
-//   font-size: 16px;
-//   line-height: 1.5;
-//   transition: box-shadow 250ms $cubic;
-
-//   &:active {
-//     box-shadow: $secondary-box-shadow;
-//   }
-
-//   &--amazon {
-//     background-color: #150b00;
-//   }
-//   &--apple {
-//     background: linear-gradient(145.64deg, #00e0ff 9.67%, #0047ff 107.49%);
-//   }
-//   &--steam {
-//     font-weight: 700;
-//     letter-spacing: 5px;
-//     line-height: 2;
-//     background-color: $black;
-//   }
-//   &--google {
-//     background: linear-gradient(145.64deg, #99fdd9 19.86%, #1e62a2 107.49%);
-//   }
-//   &--others {
-//     background: $accent-gradient;
-//   }
-// }
-
-// .cards__card--iconTop {
-//   position: absolute;
-//   top: 11px;
-//   right: 16px;
-// }
-
-// .cards__card--iconMain {
-//   margin-bottom: 15px;
-// }
-
-// // Crypto Cards
-
-// .crypto-cards {
-//   display: flex;
-//   justify-content: space-around;
-// }
-
-// .crypto-cards__card {
-//   width: 308px;
-//   height: 214px;
-//   padding-top: 67px;
-//   padding-bottom: 49px;
-
-//   &--bitcoin {
-//     background: radial-gradient(
-//       100% 100% at 46.86% 0%,
-//       #ff8000 0%,
-//       #e34141 100%
-//     );
-//   }
-//   &--eth {
-//     background: linear-gradient(145.64deg, #00e0ff 9.67%, #0047ff 107.49%);
-//   }
-// }
-
-// .crypto-cards__card--icon {
-//   margin-bottom: 27px;
-//   fill: $white;
-// }
-
-.modal {
+.backdrop {
   position: fixed;
-
+  z-index: 999;
   top: 0;
   left: 0;
+  padding: 93px 15px 0 15px;
   width: 100%;
   height: 100%;
-
   background-color: rgba(0, 0, 0, 0.8);
-
   opacity: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transition: opacity 250ms $cubic;
+  visibility: hidden;
+  overflow-y: scroll;
+  transition: all 250ms $cubic;
 }
-
-.modal.open {
+.backdrop.is-open {
   opacity: 1;
   visibility: visible;
 }
-
-.modal__body {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 10px;
+.backdrop.is-open .modal {
+  transform: scale(0.9);
 }
 
-.modal__content {
-  background-color: #fff;
+.modal__button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  margin: 8px 8px;
+  padding: 10;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: $grey;
+  background-color: $white;
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    color: $accent;
+  }
+}
+
+// Login - Sugn Up
+.modal {
+  max-width: 644px;
+  margin: 0 auto;
+  padding: 52px 160px 55px 160px;
+  text-align: center;
+  transform: scale(1);
+  transition: transform 250ms $cubic;
+
+  box-shadow: $secondary-box-shadow;
+  border-radius: 30px;
+  background-color: $white;
+}
+
+.modal__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+
+  background: $accent-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.modal__desc {
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.modal__input {
+  width: 100%;
+  padding: 19px 0 21px 20px;
+  font-size: 14px;
+  line-height: 1.4;
+  background: $white;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  box-shadow: $main-box-shadow;
+  transition: box-shadow 250ms $cubic;
+
+  &--email {
+    margin-bottom: 30px;
+  }
+
+  &:focus {
+    box-shadow: $secondary-box-shadow;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.modal__link {
+  margin-top: 17px;
+  margin-bottom: 42px;
+  text-align: right;
+
+  &--redirect {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #2f2f2f;
+    transition: color 250ms $cubic;
+    &:after {
+      content: "";
+      display: block;
+      margin: auto;
+      height: 2px;
+      width: 0px;
+      background: transparent;
+      transition: width 0.5s ease, background-color 0.5s ease;
+    }
+    &:hover:after {
+      width: 100%;
+      background: $black;
+    }
+  }
+}
+
+.modal__sign {
+  margin-top: 38px;
+  font-size: 12px;
+  line-height: 1.6;
+
+  color: #2f2f2f;
+}
+
+.modal__redirect {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+// Cards
+.modal__cards {
   max-width: 888px;
+  padding: 52px 74px 97px 74px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cards__item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.cards__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 231px;
+  height: 160px;
+  padding-top: 43px;
+  padding-bottom: 34px;
+
+  cursor: pointer;
+
+  border: transparent;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: $main-box-shadow;
+  color: $white;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: box-shadow 250ms $cubic;
+
+  &:active {
+    box-shadow: $secondary-box-shadow;
+  }
+
+  &--amazon {
+    background-color: #150b00;
+  }
+  &--apple {
+    background: linear-gradient(145.64deg, #00e0ff 9.67%, #0047ff 107.49%);
+  }
+  &--steam {
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 2;
+    background-color: $black;
+  }
+  &--google {
+    background: linear-gradient(145.64deg, #99fdd9 19.86%, #1e62a2 107.49%);
+  }
+  &--others {
+    background: $accent-gradient;
+  }
+}
+
+.cards__card--iconTop {
+  position: absolute;
+  top: 11px;
+  right: 16px;
+}
+
+.cards__card--iconMain {
+  margin-bottom: 15px;
+}
+
+// Crypto Cards
+
+.crypto-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.crypto-cards__card {
+  width: 308px;
+  height: 214px;
+  padding-top: 67px;
+  padding-bottom: 49px;
+
+  &--bitcoin {
+    background: radial-gradient(
+      100% 100% at 46.86% 0%,
+      #ff8000 0%,
+      #e34141 100%
+    );
+  }
+  &--eth {
+    background: linear-gradient(145.64deg, #00e0ff 9.67%, #0047ff 107.49%);
+  }
+}
+
+.crypto-cards__card--icon {
+  margin-bottom: 27px;
+  fill: $white;
 }
