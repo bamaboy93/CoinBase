@@ -1393,6 +1393,19 @@ a {
   background-image: url(../../images/user-avatars/user13.jpg);
 }
 
+.customers__dropout {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 410px;
+  text-align: left;
+  padding: 17.7px 0 17.7px 26px;
+  background: rgba(196, 196, 196, 0.4392156863);
+  border-radius: 15px;
+}
+
 .app-overlay {
   position: relative;
   height: 657px;
